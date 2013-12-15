@@ -6,7 +6,9 @@ function PriorityRater(options) {
 PriorityRater.DEFAULT_PRIORITY_MAP = {
   'textarea': 70,
   'input[type=text]': 70,
-  'input[type=submit]': 90
+  'input[type=submit]': 90,
+  'input[type=radio]': 0,
+  'input[type=checkbox]': 0
 }
 
 PriorityRater.prototype.rate = function (el) {
